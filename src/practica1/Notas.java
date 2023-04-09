@@ -108,12 +108,12 @@ public class Notas {
 	
 	public void aprobado() {
 			if(notaFinal<5 && notaFinal>=0) {
-				System.out.println("Suspendido");
+				System.out.println("El alumno ha suspendido");
 			}else {
 				if (notaFinal>=5 && notaFinal<=10 ) {
-				System.out.println("Aprobado");
+				System.out.println("El alumno está aprobado");
 				}else {
-					System.out.println("Error en la notas");
+					System.out.println("Ha habido un error en las notas");
 				}
 			}
 		}
