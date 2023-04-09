@@ -7,7 +7,7 @@ import java.util.Scanner;
  * @author Laura Martinez
  * @version 1.0.0
  */
-
+ 
 public class Notas {
 	//declaramos la variables que nos hacen falta
 	double uf1, uf2, uf3;
@@ -21,7 +21,7 @@ public class Notas {
 	*/ 
 	public void ingresaNotas() {
 		//cuando ejecutamos este metodo lo primero que queremos es que nos pida notas
-		System.out.println("Ingrese las notas del estudiante");
+		System.out.println("Introduce las notas del alumno");
 		
 		System.out.print("Ingrese nota 1: ");
 		uf1= entrada.nextDouble();
