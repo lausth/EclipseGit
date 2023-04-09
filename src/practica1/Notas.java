@@ -11,7 +11,7 @@ import java.util.Scanner;
 public class Notas {
 	//declaramos la variables que nos hacen falta
 	double uf1, uf2, uf3;
-	double acu1, acu2, acu3, def;
+	double acu1, acu2, acu3, notaFinal;
 	
 	//utilizamos escaner para poder introducir datos
 	Scanner entrada = new Scanner(System.in);
@@ -68,7 +68,7 @@ public class Notas {
 	* @param uf1 Nota obtenida en la Unidad 1
 	* @param uf2 Nota obtenida en la Unidad 2
 	* @param uf3 Nota obtenida en la Unidad 3
-	* @return def Nota obtenida en la asignatura
+	* @return notaFinal Nota obtenida en la asignatura
 	*/ 	
 	
 	public double calculoNotas(double uf1, double uf2, double uf3) {
@@ -76,9 +76,9 @@ public class Notas {
 		acu2 = uf2 * 0.35;
 		acu3 = uf3 * 0.30;
 		
-		def = acu1 + acu2+ acu3;
+		notaFinal = acu1 + acu2+ acu3;
 		//hasta aqui la tenemos calculada pero no la mostramos
-		return def;
+		return notaFinal;
 	}
 	
 	
@@ -97,7 +97,7 @@ public class Notas {
 		System.out.println(" acumulado 2 = "+ acu2);
 		System.out.println(" acumulado 3 = "+ acu3);
 		
-		System.out.println(" nota definitiva es = "+ def);		
+		System.out.println(" nota definitiva es = "+ notaFinal);		
 	}
 
 	
@@ -106,10 +106,10 @@ public class Notas {
 	*/ 
 	
 	public void aprobado() {
-			if(def<5 && def>=0) {
+			if(notaFinal<5 && notaFinal>=0) {
 				System.out.println("Suspendido");
 			}else {
-				if (def>=5 && def<=10 ) {
+				if (notaFinal>=5 && notaFinal<=10 ) {
 				System.out.println("Aprobado");
 				}else {
 					System.out.println("Error en la notas");
