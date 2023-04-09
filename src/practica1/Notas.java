@@ -31,6 +31,8 @@ public class Notas {
 		
 		System.out.print("Ingrese nota 3: ");
 		uf3= entrada.nextDouble();
+		
+		System.out.println("Has introducido los siguientes valores: " + uf1 + "," + uf2 + "," + uf3);
 	}
 	
 	
